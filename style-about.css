@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: arial;
+    color: white;
+}
+body{
+    height: 1000px;
+    background: linear-gradient(to left, rgb(114, 74, 0), rgb(0, 0, 0))
+}
+.main{
+    display: flex;
+    flex: 1 1;
+}
+.viewport1{
+    margin-left: 200px;
+    margin-top: 220px;
+}
+.title1{
+    font-size: 32px;
+    width: 600px;
+    cursor: context-menu;
+    background:  linear-gradient(90deg, orange, rgb(255, 72, 0), orange);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 10s linear infinite;
+}
+@keyframes animate {
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+.introducion p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.introducion{
+    cursor: context-menu;
+    flex-wrap: wrap;
+    width: 600px;
+    margin-top: 100px;
+    line-height: 23px;
+    border-style: solid;
+    border-width: 3px;
+    border-image: linear-gradient(to left, orange, rgb(114, 74, 0), rgb(24, 24, 24), rgb(24, 24, 24));
+    border-image-slice: 1;
+    padding-left: 10%;
+    padding-right: 10%;
+    transition: 1s;
+}
+.introducion:hover{
+    box-shadow: -10px 10px 10px black;
+}
+
+.nav-btn{
+    padding: 12px;
+    border-radius: 3px;
+    border: none;
+}
+.nav-section{
+    padding-top: 12px;
+    padding-left: 12px;
+    position: fixed;
+    background: rgb(24, 24, 24);
+    bottom: 0;
+    top: 0;
+    left: 0;
+    width: 150px;
+}
+.split-section1{
+    height: 15%;
+}
+.logo-img{
+    width: 100%;
+    transition: 1s;
+    padding-bottom: 0.5rem;
+}
+.logo-img-div{
+    background: orange;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -10;
+}
+.split-section2 button{
+    cursor: pointer;
+    display: block;
+    margin-top: 50px;
+    padding: 8px 10px;
+    width: 120px;
+    color: orange;
+    background: rgb(24, 24, 24);
+    border-color: rgb(51, 51, 51);
+    border-style: solid;
+    border-width: 2px;
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.3s;
+}
+.split-section2 button:hover{
+    background: rgb(17, 17, 17);
+    border-color: rgb(61, 61, 61);
+    box-shadow: -5px 5px 10px black;
+}
+.split-section2 button:active{
+    background: rgb(0, 0, 0);
+    border-color: rgb(70, 70, 70);
+}
+.split-section2{
+    margin-top: 100px;
+}
+.split-section2 a{
+    text-decoration: none;
+}
+html::-webkit-scrollbar{
+    border-radius: .5em;
+    width: 1vw;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: goldenrod;
+    border-radius: .5em;
+    border: .25em solid rgb(255, 213, 134);
+}
+html::-webkit-scrollbar-track{
+    background-color: rgb(255, 213, 134);
+}

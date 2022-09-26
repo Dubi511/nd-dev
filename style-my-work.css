@@ -1,0 +1,100 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: arial;
+    color: white;
+}
+body{
+    padding-left: 10%;
+    padding-right: 1.5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background: linear-gradient(to left, rgb(114, 74, 0), rgb(0, 0, 0))
+}
+.nav-section{
+    padding-top: 12px;
+    padding-left: 12px;
+    position: fixed;
+    background: rgb(24, 24, 24);
+    bottom: 0;
+    top: 0;
+    left: 0;
+    width: 150px;
+}
+.split-section1{
+    height: 15%;
+}
+.logo-img{
+    width: 100%;
+    transition: 1s;
+    padding-bottom: 0.5rem;
+}
+.logo-img-div{
+    background: orange;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -10;
+}
+.split-section2 button{
+    display: block;
+    margin-top: 50px;
+    padding: 8px 10px;
+    width: 120px;
+    color: orange;
+    background: rgb(24, 24, 24);
+    border-color: rgb(51, 51, 51);
+    border-style: solid;
+    border-width: 2px;
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.3s;
+}
+.split-section2 button:hover{
+    background: rgb(17, 17, 17);
+    border-color: rgb(61, 61, 61);
+    box-shadow: -5px 5px 10px black;
+}
+.split-section2 button:active{
+    background: rgb(0, 0, 0);
+    border-color: rgb(70, 70, 70);
+}
+.split-section2{
+    margin-top: 100px;
+}
+.split-section2 a{
+    text-decoration: none;
+}
+html::-webkit-scrollbar{
+    border-radius: .5em;
+    width: 1vw;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: goldenrod;
+    border-radius: .5em;
+    border: .25em solid rgb(255, 213, 134);
+}
+html::-webkit-scrollbar-track{
+    background-color: rgb(255, 213, 134);
+}
+.grid-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(150px, auto);
+    grid-gap: 2px;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}
+.grid-item{
+    border: solid;
+    border-color: orange;
+    text-align: center;
+}
+.grid-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
